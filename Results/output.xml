@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.10 on win32)" generated="20220407 22:14:34.262" rpa="false" schemaversion="3">
+<suite id="s1" name="Filpkart" source="C:\Users\Lenovo\PycharmProjects\April 7 Assignment\Tests\Filpkart\FunctionalTestSuite\filpkart.robot">
+<kw name="Log" library="BuiltIn" type="SETUP">
+<arg>Inside Test Suite Setup</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220407 22:14:35.624" level="INFO">Inside Test Suite Setup</msg>
+<status status="PASS" starttime="20220407 22:14:35.624" endtime="20220407 22:14:35.624"/>
+</kw>
+<test id="s1-t1" name="Google Search Test" line="17">
+<kw name="Log" library="BuiltIn" type="SETUP">
+<arg>Inside Test case Setup</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220407 22:14:35.625" level="INFO">Inside Test case Setup</msg>
+<status status="PASS" starttime="20220407 22:14:35.625" endtime="20220407 22:14:35.626"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${google_search}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220407 22:14:35.627" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
+<status status="PASS" starttime="20220407 22:14:35.627" endtime="20220407 22:14:45.917"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220407 22:14:45.917" endtime="20220407 22:14:46.120"/>
+</kw>
+<kw name="Search Data">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>${search_query}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 22:14:46.125" level="INFO">Typing text 'filpkart' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220407 22:14:46.122" endtime="20220407 22:14:46.337"/>
+</kw>
+<status status="PASS" starttime="20220407 22:14:46.121" endtime="20220407 22:14:46.337"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20220407 22:14:46.340" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20220407 22:14:46.339" endtime="20220407 22:14:49.899"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:LC20lb</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220407 22:14:49.902" level="INFO">Clicking element 'class:LC20lb'.</msg>
+<status status="PASS" starttime="20220407 22:14:49.901" endtime="20220407 22:14:54.099"/>
+</kw>
+<kw name="Log" library="BuiltIn" type="TEARDOWN">
+<arg>Inside Test Case Teardown</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220407 22:14:54.101" level="INFO">Inside Test Case Teardown</msg>
+<status status="PASS" starttime="20220407 22:14:54.101" endtime="20220407 22:14:54.102"/>
+</kw>
+<doc>This page is to test Chrome</doc>
+<tag>Google</tag>
+<status status="PASS" starttime="20220407 22:14:35.625" endtime="20220407 22:14:54.104"/>
+</test>
+<test id="s1-t2" name="Filpkart Search Test" line="26">
+<kw name="Log" library="BuiltIn" type="SETUP">
+<arg>Inside Test case Setup</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220407 22:14:54.110" level="INFO">Inside Test case Setup</msg>
+<status status="PASS" starttime="20220407 22:14:54.110" endtime="20220407 22:14:54.110"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 22:14:57.120" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 22:14:54.112" endtime="20220407 22:14:57.120"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class:_2KpZ6l</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220407 22:14:57.120" level="INFO">Clicking button 'class:_2KpZ6l'.</msg>
+<status status="PASS" starttime="20220407 22:14:57.120" endtime="20220407 22:14:57.433"/>
+</kw>
+<kw name="Search Filpkart Data">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>${product_search}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 22:14:57.436" level="INFO">Typing text 'LG TV' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220407 22:14:57.435" endtime="20220407 22:14:57.684"/>
+</kw>
+<status status="PASS" starttime="20220407 22:14:57.435" endtime="20220407 22:14:57.684"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 22:15:00.688" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 22:14:57.685" endtime="20220407 22:15:00.688"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class:L0Z3Pu</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220407 22:15:00.690" level="INFO">Clicking button 'class:L0Z3Pu'.</msg>
+<status status="PASS" starttime="20220407 22:15:00.689" endtime="20220407 22:15:00.921"/>
+</kw>
+<kw name="Log" library="BuiltIn" type="TEARDOWN">
+<arg>Inside Test Case Teardown</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220407 22:15:00.926" level="INFO">Inside Test Case Teardown</msg>
+<status status="PASS" starttime="20220407 22:15:00.925" endtime="20220407 22:15:00.927"/>
+</kw>
+<doc>This page is for filpkart search</doc>
+<tag>filpkart</tag>
+<status status="PASS" starttime="20220407 22:14:54.108" endtime="20220407 22:15:00.928"/>
+</test>
+<test id="s1-t3" name="Purchase Item Test" line="35">
+<kw name="Log" library="BuiltIn" type="SETUP">
+<arg>Inside Test case Setup</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220407 22:15:00.934" level="INFO">Inside Test case Setup</msg>
+<status status="PASS" starttime="20220407 22:15:00.934" endtime="20220407 22:15:00.934"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 22:15:03.952" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 22:15:00.934" endtime="20220407 22:15:03.952"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div/div[3]/div[1]/div[2]/div[4]/div/div/div/a/div[2]/div[1]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220407 22:15:03.953" level="INFO">Clicking element 'xpath:/html/body/div/div/div[3]/div[1]/div[2]/div[4]/div/div/div/a/div[2]/div[1]/div[1]'.</msg>
+<status status="PASS" starttime="20220407 22:15:03.953" endtime="20220407 22:15:04.461"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 22:15:07.476" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 22:15:04.463" endtime="20220407 22:15:07.477"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title:LG 139 cm (55 inch) Ultra HD (4K) LED Smart TV Online at best Prices In India</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220407 22:15:07.479" endtime="20220407 22:15:10.419"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 22:15:13.419" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 22:15:10.419" endtime="20220407 22:15:13.419"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[1]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[2]/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220407 22:15:13.420" level="INFO">Clicking button 'xpath:/html/body/div[1]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[2]/form/button'.</msg>
+<status status="PASS" starttime="20220407 22:15:13.419" endtime="20220407 22:15:13.744"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 22:15:16.754" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 22:15:13.745" endtime="20220407 22:15:16.754"/>
+</kw>
+<kw name="Email Address">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>class:_17N0em</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 22:15:16.762" level="INFO">Typing text 'akash@gmail.com' into text field 'class:_17N0em'.</msg>
+<status status="PASS" starttime="20220407 22:15:16.755" endtime="20220407 22:15:32.052"/>
+</kw>
+<status status="PASS" starttime="20220407 22:15:16.755" endtime="20220407 22:15:32.053"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 22:15:35.058" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 22:15:32.053" endtime="20220407 22:15:35.058"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[1]/div/div[2]/div/div[1]/div[1]/div/div/div/div/div[1]/div/form/div[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220407 22:15:35.059" level="INFO">Clicking button 'xpath:/html/body/div[1]/div/div[2]/div/div[1]/div[1]/div/div/div/div/div[1]/div/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20220407 22:15:35.058" endtime="20220407 22:15:35.190"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 22:15:38.197" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 22:15:35.191" endtime="20220407 22:15:38.198"/>
+</kw>
+<kw name="Password">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[1]/div/div[2]/div/div[1]/div[1]/div/div/div/div/div[1]/div/form/div[2]/input</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 22:15:38.201" level="INFO">Typing text 'abcdefgh' into text field 'xpath:/html/body/div[1]/div/div[2]/div/div[1]/div[1]/div/div/div/div/div[1]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20220407 22:15:38.201" endtime="20220407 22:15:38.442"/>
+</kw>
+<status status="PASS" starttime="20220407 22:15:38.199" endtime="20220407 22:15:38.443"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 22:15:41.447" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 22:15:38.444" endtime="20220407 22:15:41.448"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[1]/div/div[2]/div/div[1]/div[1]/div/div/div/div/div[1]/div/form/div[4]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220407 22:15:41.451" level="INFO">Clicking button 'xpath:/html/body/div[1]/div/div[2]/div/div[1]/div[1]/div/div/div/div/div[1]/div/form/div[4]/button'.</msg>
+<status status="PASS" starttime="20220407 22:15:41.450" endtime="20220407 22:15:41.802"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 22:15:44.809" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220407 22:15:41.806" endtime="20220407 22:15:44.809"/>
+</kw>
+<kw name="Log" library="BuiltIn" type="TEARDOWN">
+<arg>Inside Test Case Teardown</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220407 22:15:44.810" level="INFO">Inside Test Case Teardown</msg>
+<status status="PASS" starttime="20220407 22:15:44.810" endtime="20220407 22:15:44.810"/>
+</kw>
+<doc>This page is for Purchase</doc>
+<tag>Purchase</tag>
+<status status="PASS" starttime="20220407 22:15:00.932" endtime="20220407 22:15:44.810"/>
+</test>
+<kw name="Log" library="BuiltIn" type="TEARDOWN">
+<arg>Inside Test Suite Teardown</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220407 22:15:44.820" level="INFO">Inside Test Suite Teardown</msg>
+<status status="PASS" starttime="20220407 22:15:44.820" endtime="20220407 22:15:44.820"/>
+</kw>
+<status status="PASS" starttime="20220407 22:14:34.264" endtime="20220407 22:15:44.820"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">filpkart</stat>
+<stat pass="1" fail="0" skip="0">Google</stat>
+<stat pass="1" fail="0" skip="0">Purchase</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Filpkart">Filpkart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
